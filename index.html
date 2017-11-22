@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Escola de Férias - ICEI PUC Minas</title>
+<link href="tools/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="tools/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="tools/jquery.min.js"></script> 
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,700italic' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+
+
+</head>
+<body>
+<div class="transy"></div>
+<div class="wrapper">
+	<div class="centered">
+		<div class="header">
+			<img src="images/logo.png" alt="Escola de Férias" width="400px">
+			<!-- <p class="line1">one and only place for virtual guests is coming soon</p> -->
+		</div>
+		
+		<div class="content">
+				<p>- Vai acontecer dentro de -</p>
+				<div id="counter"></div>
+		</div>
+		
+		
+		
+
+		
+		<div class="form">
+			<div class="mainform">
+				<p>- Teremos atividades nas unidades -</p>
+				<div class="coreu">
+					<b>Coração Eucarístico</b>
+					<br/><br/>
+					Rua Dom José Gaspar, 500 - Prédio 34
+				</div>
+				<div class="praca">
+					<b>Praça da Liberdade</b>
+					<br/><br/>
+					Rua xxx, 0 - Prédio 0
+				</div>
+				<!-- <div class="field"><input type="text" class="field" id="test" value="enter your email address"/></div>
+				<div class="submit"><input class="submit" type="button" value="Signup" /></div>						 -->
+			</div>
+		</div>
+		
+		
+		
+		<div class="social">
+		<p>
+			<a href="https://www.facebook.com/escoladeferiasicei/" target="_blank"><span class="socicon">b</span> facebook</a>
+			<!-- <a href="#"><span class="socicon">a</span> twitter</a> -->
+		</p>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript" src="tools/jquery.countdown.min.js"></script>
+		<script>
+    $(document).ready(function() {
+/* Change the launch date according to the date you want to set.
+Please take note that months ranges from 0-11 like an array setup. 
+*/
+        var launchdate = new Date(2017, 11, 1, 9, 0);
+        $('#counter').countdown({
+            until: launchdate
+        });
+    })(jQuery);
+	</script>
+	
+	
+		<script type="text/javascript">
+var placeholder = $("#test").val();
+
+$("#test").keydown(function() {
+    if (this.value == placeholder) {
+        this.value = '';
+    }
+}).blur(function() {
+    if (this.value == '') {
+        this.value = placeholder;
+    }
+});
+</script>
+
+</body>
+</html>
